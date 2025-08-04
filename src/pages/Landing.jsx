@@ -36,16 +36,31 @@ function Landing({ cartItems, setCartItems }) {
                             zIndex: 2,
                             color: 'white',
                             textAlign: 'center',
-                            textShadow: '5px 5px 20px rgba(0, 0, 0, 1)'
+                            textShadow: '5px 5px 20px rgba(0, 0, 0, 1)',
+                            width: '90%',
+                            padding: '0 1rem',
                         }}
                     >
-                        <h2 style={{ fontSize: '4.5rem', fontWeight: 'bold' }}>
+                        <h2
+                            style={{
+                                fontSize: '6vw',
+                                fontWeight: 'bold',
+                            }}
+                        >
                             Explore Over 7,287 Courses from Top Instructors
                         </h2>
-                        <p style={{ fontSize: '1.25rem' }}>
+                        <p
+                            style={{
+                                fontSize: '1.2rem',
+                            }}
+                        >
                             Learn Web Development, Design, Marketing & More
                         </p>
-                        <a href='#courses' className="btn btn-primary btn-lg mt-3 shadow-lg">
+                        <a
+                            href="#courses"
+                            className="btn btn-primary btn-lg mt-3 shadow-lg"
+                            style={{ fontSize: '1rem' }}
+                        >
                             Get Started
                         </a>
                     </div>
@@ -54,10 +69,15 @@ function Landing({ cartItems, setCartItems }) {
                         src="https://incentiveandmotivation.com/wp-content/uploads/2022/08/Red-Black-Fitness-Gym-Presentation-Template-3-1024x576.png"
                         alt=""
                         className="d-block w-100"
-                        style={{ height: '875px', objectFit: 'cover' }}
+                        style={{
+                            height: '100vh',
+                            objectFit: 'cover',
+                            maxHeight: '875px',
+                        }}
                     />
                 </div>
             </header>
+
 
             <div id='courses'>
                 <h1 className='p-5 fs-2'>Recommended courses for you,</h1>

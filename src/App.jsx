@@ -8,6 +8,7 @@ import CourseDetail from './pages/CourseDetail'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Cart from './pages/Cart'
+import CheckoutPage from './pages/CheckoutPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
         <Route path='/' element={<Landing cartItems={cartItems} setCartItems={setCartItems}/>}/>
         <Route path='/details/:courseId' element={<CourseDetail cartItems={cartItems} setCartItems={setCartItems}/>}/>
         <Route path='/cart' element={<Cart cartItems={cartItems} setCartItems={setCartItems}/>} />
+        <Route path='/checkout' element={<CheckoutPage/>}/>
       </Routes>
       <Footer/>
     </>

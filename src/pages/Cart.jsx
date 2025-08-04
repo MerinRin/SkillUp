@@ -66,7 +66,7 @@ function Cart({cartItems, setCartItems}) {
                         <p>Discount: ₹{cartItems.length*100}</p>
                         <hr />
                         <h5>Total: ₹{total}</h5>
-                        <Button variant="success" className="w-100 mt-2">Proceed to Checkout</Button>
+                        <Button onClick={() => navigate(`/checkout`)} variant="success" className="w-100 mt-2">Proceed to Checkout</Button>
                     </div>
                 </div>
             </div>
