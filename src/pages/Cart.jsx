@@ -60,7 +60,6 @@ function Cart({cartItems, setCartItems}) {
                 <h2>Cart Summary</h2>
                 <div className="col-md-4">
                     <div className="p-3 border rounded">
-                        <p>Subtotal:</p>
                         <p>No of courses: {cartItems.length}</p>
                         <p>Total: ₹{total+cartItems.length*100}</p>
                         <p>Discount: ₹{cartItems.length*100}</p>
