@@ -17,7 +17,7 @@ function CheckoutPage() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form submitted:', form);
-        alert('Payment initiated!');
+        alert('Purchase successful!');
     };
 
     return (
